@@ -1,25 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Background from '../assets/parrot.jpg';
+import { Jumbotron, Container, Button } from 'reactstrap';
 
-function Jumbotron(){
+function Home(){
   return (
-    <div className="jumbotron">
+    <div className='home'>
       <style jsx>{`
-          div.jumbotron {
-            background-color:yellow;
-            text-align:center;
+          .jumbotron {
+            background-image:url(${Background});
+            background-size:cover;
             font-family:sans-serif;
+            height:650px;
+            color:white;
           }
-          img {
-            width:10%;
-            border-radius:40px;
+          .jumbotron-text {
+            margin-left:10%;
           }
-          `}
+          .jumbotron-link {
+            margin-right:5%;
+          }
+        `}
       </style>
-      <h1>JUMBOTRON COMPONENT</h1>
-      <Link to='/about'>About Us</Link>
+      <Jumbotron fluid className='jumbotron'>
+        <Container fluid className='jumbotron-text'>
+          <h1 className="display-3">Zazu's House</h1>
+          <p className="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          <Link to='/about'><Button className='jumbotron-link' color='info'>About Us</Button></Link>
+          <Link to='/support'><Button className='jumbotron-link' color='primary'>Donate</Button></Link>
+        </Container>
+      </Jumbotron>
     </div>
   );
 }
 
-export default Jumbotron;
+export default Home;
