@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
-import Jumbotron from './Jumbotron';
+import Home from './Home';
 import About from './About';
 import Volunteers from './Volunteers';
 import Gallery from './Gallery';
@@ -15,7 +15,7 @@ function App(){
     <div>
       <Header/>
       <Switch>
-        <Route exact path='/' component={Jumbotron}/>
+        <Route exact path='/' component={Home}/>
         <Route path='/about' component={About}/>
         <Route path='/volunteers' component={Volunteers}/>
         <Route path='/gallery' component={Gallery}/>
