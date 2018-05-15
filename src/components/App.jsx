@@ -10,21 +10,24 @@ import Videos from './Videos';
 import Contact from './Contact';
 import Support from './Support';
 import Donate from './Donate';
+import { Container } from 'reactstrap';
 
 function App(){
   return (
     <div>
       <Header/>
       <Switch>
-        <Route exact path='/' component={Home}/>
-        <Route path='/about' component={About}/>
-        <Route path='/volunteers' component={Volunteers}/>
-        <Route path='/photos' component={Photos}/>
-        <Route path='/videos' component={Videos}/>
-        <Route path='/contact' component={Contact}/>
-        <Route path='/support' component={Support}/>
-        <Route path='/donate' component={Donate}/>
-      </Switch>
+          <Route exact path='/' component={Home}/>
+          <Container>
+            <Route path='/about' component={About}/>
+            <Route path='/volunteers' component={Volunteers}/>
+            <Route path='/photos' component={Photos}/>
+            <Route path='/videos' component={Videos}/>
+            <Route path='/contact' component={Contact}/>
+            <Route path='/support' component={Support}/>
+            <Route path='/donate' component={Donate}/>
+          </Container>
+        </Switch>
       <Footer/>
     </div>
   );

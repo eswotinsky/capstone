@@ -49,7 +49,7 @@ class Header extends React.Component {
                 <DropdownToggle nav caret>
                   Gallery
                 </DropdownToggle>
-                <DropdownMenu right>
+                <DropdownMenu left>
                   <Link to='/photos'>
                     <DropdownItem>
                       Photos
@@ -64,10 +64,10 @@ class Header extends React.Component {
               </UncontrolledDropdown>
 
               <NavItem>
-                <NavLink><Link to='/contact'>Contact</Link></NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink><Link to='/support'>Support</Link></NavLink>
+              </NavItem>  
+              <NavItem>
+                <NavLink><Link to='/contact'>Contact</Link></NavLink>
               </NavItem>
               <NavItem>
                 <NavLink><Link to='/donate'>Donate Now</Link></NavLink>

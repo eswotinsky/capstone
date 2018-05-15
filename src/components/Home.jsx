@@ -23,13 +23,16 @@ function Home(){
         `}
       </style>
       <Jumbotron fluid className='jumbotron'>
-        <Container fluid className='jumbotron-text'>
+        <div className='jumbotron-text'>
           <h1 className="display-3">Zazu's House<br/>Parrot Sanctuary</h1>
           <p className="lead">Placeholder text goes here, here, and also here.</p>
           <Link to='/about'><Button className='jumbotron-link' color='info'>About Us</Button></Link>
-          <Link to='/support'><Button className='jumbotron-link' color='primary'>Donate</Button></Link>
-        </Container>
+          <Link to='/support'><Button className='jumbotron-link' color='primary'>Support Our Birds</Button></Link>
+        </div>
       </Jumbotron>
+      <Container>
+        <h1>Home page container content</h1>
+      </Container>
     </div>
   );
 }
