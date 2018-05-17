@@ -11,6 +11,7 @@ import Contact from './Contact';
 import Support from './Support';
 import Donate from './Donate';
 import Error404 from './Error404';
+import Admin from './Admin';
 
 function App(){
   return (
@@ -36,6 +37,7 @@ function App(){
         <Route path='/contact' component={Contact}/>
         <Route path='/support' component={Support}/>
         <Route path='/donate' component={Donate}/>
+        <Route path='/admin' component={Admin}/>
         <Route component={Error404}/>
       </Switch>
       <Footer/>

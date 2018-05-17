@@ -5,6 +5,7 @@ import faTwitter from '@fortawesome/fontawesome-free-brands/faTwitter';
 import faYoutube from '@fortawesome/fontawesome-free-brands/faYoutube';
 import faTumblr from '@fortawesome/fontawesome-free-brands/faTumblr';
 import faInstagram from '@fortawesome/fontawesome-free-brands/faInstagram';
+import { Link } from 'react-router-dom';
 
 function Footer(){
   return (
@@ -22,6 +23,7 @@ function Footer(){
           `}
       </style>
       <h1>FOOTER COMPONENT</h1>
+      <Link to='/admin'><span style={{textAlign:'left', display:'block'}}>Admin</span></Link>
       <a href='https://www.youtube.com/channel/UCf8LtsnnXnwAmXOFGhp_wjw/'><FontAwesomeIcon icon={faYoutube} size='lg' pull='right' /></a>
       <a href='http://zazushousesanctuary.tumblr.com/'><FontAwesomeIcon icon={faTumblr} size='lg' pull='right' /></a>
       <a href='https://www.instagram.com/zazushousesanctuary/'><FontAwesomeIcon icon={faInstagram} size='lg' pull='right' /></a>
