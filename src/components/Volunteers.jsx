@@ -2,7 +2,7 @@ import React from 'react';
 
 function Volunteers(){
   return (
-    <div id="volunteers">
+    <div className='routeContainer'>
       <style jsx>{`
           div#id {
             background-color:red;

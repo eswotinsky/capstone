@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Background from '../assets/parrot.jpg';
-import { Jumbotron, Container, Button } from 'reactstrap';
+import { Jumbotron, Button } from 'reactstrap';
 
 function Home(){
   return (
@@ -30,9 +30,10 @@ function Home(){
           <Link to='/support'><Button className='jumbotron-link' color='primary'>Support Our Birds</Button></Link>
         </div>
       </Jumbotron>
-      <Container>
+      <div className='routeContainer'>
         <h1>Home page container content</h1>
-      </Container>
+        <p>More content goes here</p>
+      </div>
     </div>
   );
 }

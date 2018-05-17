@@ -2,7 +2,7 @@ import React from 'react';
 
 function Donate(){
   return(
-    <div>
+    <div className='routeContainer'>
       <h1>DONATE COMPONENT</h1>
       <p>
         Zazu’s House operates 100% with an all-volunteer staff and NO administrative salaries or paid directors. We run on a very tight budget, and even a $10 donation can make a big difference for our birds!
