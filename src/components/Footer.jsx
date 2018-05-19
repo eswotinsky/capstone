@@ -12,11 +12,8 @@ function Footer(){
     <div className="footer">
       <style jsx>{`
           div.footer {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding: 1rem;
+            flex-shrink: 0;
+            padding-bottom: 2.1em;
             background-color: lime;
             text-align: center;
           }
